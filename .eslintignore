@@ -1,0 +1,9 @@
+# /node_modules/* and /bower_components/* in the project root are ignored by default
+
+# Ignored files  and Directories:
+lib/utils/type-validator.js
+lib/utils/validator.js
+config/
+package*
+pre-commit
+README.md

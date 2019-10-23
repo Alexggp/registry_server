@@ -1,0 +1,54 @@
+{
+  "name": "login_server",
+  "versuib": "1.0.0",
+  "author": "Alejandro García-Gasco Pérez",
+  "license": "Public Domain",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "index.js",
+  "requires": true,
+  "lockfileVersion": 1,
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint ./**/*.js --fix",
+    "test": "mocha --recursive"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint ./**/*.js --fix",
+      "pre-push": "npm test"
+    }
+  },
+  "dependencies": {
+    "async": "^3.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.18.0",
+    "log4js": "^0.6.9",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "mongodb": "2.2.26",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.11.0",
+    "redis": "^2.8.0",
+    "stack-trace": "0.0.10",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^2.4.1",
+    "mocha": "^6.1.4",
+    "should": "^13.2.3"
+  }
+}
