@@ -31,7 +31,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "helmet": "^3.18.0",
-    "log4js": "^0.6.9",
+    "log4js": "^6.4.0",
     "method-override": "^3.0.0",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
